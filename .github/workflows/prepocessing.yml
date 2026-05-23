@@ -24,10 +24,10 @@ jobs:
 
       - name: Run Preprocessing Script
         run: |
-          python preprocessing/automate_EvaNur.py
+          python Preprocessing/automate_EvaNur.py
 
       - name: Upload Processed Dataset
         uses: actions/upload-artifact@v4
         with:
           name: processed-dataset
-          path: preprocessing/heart_preprocessing.csv
+          path: Preprocessing/heart_preprocessing.csv
