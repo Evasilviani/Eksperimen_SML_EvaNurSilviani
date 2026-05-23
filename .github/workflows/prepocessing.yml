@@ -26,12 +26,12 @@ jobs:
         run: |
           pip install pandas numpy scikit-learn
 
-      - name: Run Preprocessing Script
+      - name: Run preprocessing Script
         run: |
-          python Preprocessing/automate_EvaNur.py
+          python preprocessing/automate_EvaNur.py
 
       - name: Upload Processed Dataset
         uses: actions/upload-artifact@v4
         with:
           name: processed-dataset
-          path: Preprocessing/heart_preprocessing.csv
+          path: preprocessing/heart_preprocessing.csv
